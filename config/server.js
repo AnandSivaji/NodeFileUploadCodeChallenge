@@ -8,7 +8,7 @@ exports.startServer = function(app, clusterMode) {
 
         var cpuCount = require('os').cpus().length;
 
-        for (var i = 0; i < cpuCount; i += 1) { cluster.fork(); }
+        for (var i = 0; i < cpuCount; i++) { cluster.fork(); }
 
         cluster.on('exit', function(worker) {
 
