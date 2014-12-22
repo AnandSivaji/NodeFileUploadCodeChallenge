@@ -2,12 +2,10 @@
     "name": "node-file-upload-code-challenge",
     "version": "0.0.1",
     "description": "A sample to do file upload in a synchronous manner and download files in asynchronous manner",
-    "contributors": [{
-        "name": "Anand Sivaji",
-        "email": "anandsivaj@gmail.com"
-    }],
     "dependencies": {
-        "express": "~3.4"
+        "express": "~4.10.2",
+        "multer": "~0.1.6",
+        "ejs": "*"
     },
     "repository": {
         "type": "git",

@@ -32,6 +32,11 @@ global.App = {
         if (!this.started) {
 
             this.started = true;
+
+            this.require('config/fileupload')(this.app);
+            this.require('config/router')(this.app);
+            this.require('config/view')(this, express);
+
             this.require('config/Server').startServer(this, packageJson.clusterMode);
         }
     }
